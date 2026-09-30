@@ -1,0 +1,277 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+*{ 
+    margin:0;
+    padding:0; 
+    box-sizing:border-box; 
+    /* font-family: Arial, sans-serif;  */
+}
+body{ 
+    background:#00050d; 
+    color:white; 
+     font-family: 'Amazon Ember Display', sans-serif;
+}
+.hero{
+  height:200px;
+  background: linear-gradient(to right, #00050d 40%, transparent), linear-gradient(to top, #00050d, transparent 50%);
+  display:flex; 
+  align-items:center ;
+   margin-left: 210px;
+   padding:50px;
+}
+.hero p{
+    font-size: 20px;
+    color: #515050;
+
+}
+.hero img{
+    height:50px;
+    width: 100px;
+}
+
+
+
+
+
+.container{
+  background:#fff;
+  width: 100%;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  padding: 25px 30px;
+  border-radius: 8px;
+}
+.container h3{
+  font-size:20px;
+  font-weight: 700;
+  color:#0f1111;
+  margin-bottom: 20px;
+  margin-left: 225px;
+}
+span{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+table{
+  width:70%;
+  border-collapse:collapse;
+  margin: auto;
+}
+th{
+  font-size:18px;
+  font-weight: 700;
+  color:#0f1111;
+  padding:10px;
+  text-align:center;
+  border-bottom:1px solid #ddd;
+}
+td{
+  font-size:16px;
+  color:#565959;
+  padding:12px 10px;
+  border-bottom:1px solid #eaeded;
+}
+
+.category{
+  font-weight:700;
+  color:#0f1111;
+  font-size:13px;
+  padding-top:16px !important;
+  border-bottom:1px solid #eaeded;
+}
+
+.center{
+     text-align:center; 
+    }
+.bold{
+     font-weight:700; 
+     color:#0f1111; 
+    }
+.blue{
+     color:#067ab1; 
+     font-weight:700;
+     }
+.bg-blue{
+     background:#eaf3f8; 
+    }
+
+.icon-x{
+     font-weight:700;
+      color:#0f1111; 
+      font-size:16px;
+     }
+.icon-tick{ 
+    color:#067600;
+     font-size:18px; 
+     font-weight:300;
+     }
+.icon-tick-blue{ 
+    color:#067ab1;
+     font-size:18px; 
+     font-weight:300;
+     }
+
+
+.btn-row{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-top:20px;
+  margin-right: 210px;
+}
+.btn{
+  width:135px;
+  min-height: 60px;
+  padding:8px 0;
+  
+  border-radius:4px;
+  border:0;
+  color:white;
+  font-family:'Amazon Ember';
+  font-size:16px;
+  font-weight:700;
+  line-height:14px;
+}
+.b1{ background:#4e5d6b; }
+.b2{ background:#0f79af; }
+.b3{ background:#2d3e4f; }
+
+.join-btn{
+  margin-top:8px;
+  margin-left:820px;
+  display:block;
+  width:425px;
+  background:#0f79af;
+  color:white;
+  border:0;
+  padding:12px;
+  border-radius:4px;
+  font-family:'Amazon Ember';
+  font-weight:700;
+  font-size:16px;
+}
+.small{
+  text-align:right;
+  font-size:16px;
+  color:#565959;
+  margin-top:6px;
+  padding-right:300px;
+}
+.prime-footer{
+  background:#222a33;
+  width:100%;
+  /* padding:18px 0 20px 0; */
+  text-align:center;
+  font-family:'Amazon Ember', Arial, sans-serif;
+  height: 200px;
+}
+
+.logo img{
+    height:100px;
+    width: 150px;
+    object-fit: contain;
+    /* padding-top: -30px; */
+
+}
+.links{
+  /* margin-top:6px; */
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  /* padding-bottom: 50px; */
+}
+.links a{
+  color:#6b8ea3;
+  font-size:16px;
+  text-decoration:none;
+}
+.links a:hover{ text-decoration:underline; color:#1c8ab6; }
+.copy{
+  margin-top:8px;
+  color:#8197a4;
+  font-size:16px;
+}
+/* ========== PRIME COMPARISON - FULL RESPONSIVE ========== */
+
+@media (max-width: 1200px){
+  .hero{margin-left:100px;padding:30px;}
+  .container h3{margin-left:100px;}
+  table{width:85%;}
+  .btn-row{margin-right:100px;}
+  .join-btn{margin-left:auto;margin-right:100px;width:350px;}
+  .small{padding-right:100px;}
+}
+
+@media (max-width: 1024px){
+  .hero{margin-left:30px;padding:25px;height:160px;}
+  .hero img{height:40px;width:80px;}
+  .hero p{font-size:18px;}
+  .container{padding:20px 15px;}
+  .container h3{margin-left:30px;font-size:18px;}
+  table{width:90%;}
+  th{font-size:16px;}
+  td{font-size:14px;}
+  .btn-row{margin-right:30px;}
+  .join-btn{margin-right:30px;width:300px;}
+  .small{padding-right:30px;font-size:14px;}
+  .links a,.copy{font-size:14px;}
+}
+
+@media (max-width: 768px){
+  .hero{margin-left:0;padding:20px 15px;height:140px;flex-direction:column;align-items:flex-start;gap:8px;justify-content:center;}
+  .hero p{font-size:16px;}
+  .container{padding:15px 10px;border-radius:0;}
+  .container h3{margin-left:0;text-align:center;font-size:18px;}
+  /* TABLE SCROLL */
+  .container{overflow-x:auto;}
+  table{width:700px;min-width:700px;margin:0;}
+  th{font-size:14px;padding:8px 6px;}
+  td{font-size:13px;padding:8px 6px;}
+  .category{font-size:11px;}
+  .btn-row{margin-right:0;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:15px;}
+  .btn{width:110px;min-height:50px;font-size:13px;}
+  .join-btn{margin:15px auto 0 auto;width:90%;max-width:350px;margin-left:auto;}
+  .small{text-align:center;padding-right:0;font-size:12px;}
+  .prime-footer{height:auto;padding:20px 10px;}
+  .logo img{height:70px;width:110px;}
+  .links{flex-wrap:wrap;gap:8px;}
+  .links a{font-size:13px;}
+  .copy{font-size:12px;}
+}
+
+@media (max-width: 600px){
+  .hero{height:120px;padding:15px;}
+  .hero img{height:35px;width:70px;}
+  .hero p{font-size:14px;}
+  .container h3{font-size:16px;margin-bottom:12px;}
+  table{width:650px;min-width:650px;}
+  th{font-size:12px;}
+  td{font-size:11px;padding:6px 4px;}
+  .btn{width:100px;min-height:45px;font-size:12px;}
+  .join-btn{font-size:14px;padding:10px;}
+}
+
+@media (max-width: 480px){
+  .hero{height:110px;padding:12px;}
+  .hero p{font-size:13px;}
+  .container{padding:12px 8px;}
+  .container h3{font-size:15px;}
+  table{width:600px;min-width:600px;}
+  th{font-size:11px;padding:6px 4px;}
+  td{font-size:10px;padding:5px 3px;}
+  .category{font-size:10px;}
+  .btn-row{gap:5px;}
+  .btn{width:30%;min-height:42px;font-size:11px;line-height:12px;}
+  .join-btn{width:95%;font-size:13px;}
+  .small{font-size:11px;margin-top:4px;}
+  .prime-footer{padding:15px 8px;}
+  .logo img{height:60px;width:90px;}
+  .links{gap:6px;}
+  .links a{font-size:11px;}
+  .copy{font-size:10px;}
+}
+
+@media (max-width: 360px){
+  table{width:550px;min-width:550px;}
+  .btn{width:32%;font-size:10px;}
+}
